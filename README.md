@@ -97,4 +97,4 @@ This repository serves as:
 * A learning platform for bioacoustics and machine learning.
 * A record of the complete research process, including both successful and unsuccessful experiments.
 
-The intention is to document the evolution of the project from the initial idea to the final conclusions, making the entire journey transparent and reproducible.
+The intention is to document the evolution of the project from the initial idea to the final conclusions, making the entire journey transparent.
