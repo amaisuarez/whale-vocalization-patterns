@@ -134,17 +134,6 @@ whale-vocalization-patterns/
 └── requirements.txt
 ```
 
-## Getting Started
-
-```bash
-git clone https://github.com/amaisuarez/whale-vocalization-patterns.git
-cd whale-vocalization-patterns
-python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-pip install -e .                    # makes `import whalecodas` work everywhere
-python scripts/download_data.py     # downloads the DSWP coda dataset
-jupyter lab                         # open notebooks/ in order
-```
 
 ## Data and Citation
 
