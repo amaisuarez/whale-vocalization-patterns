@@ -55,7 +55,7 @@ El archivo es internamente coherente: los ICIs suman la duración declarada y el
 | Formato de fechas | Mezcla de `/` y `-`, siempre día primero | Corregido en la carga |
 | Peso del tipo `1+1+3` | 49 % del subconjunto de análisis | Fuerte desequilibrio entre tipos |
 
-![Número de codas por número de clics y por tipo](figures/01_counts.png)
+![Número de codas por número de clics y por tipo](reports/figures/01_counts.png)
 
 ### 4.2. Subconjunto de análisis
 
@@ -99,9 +99,9 @@ Replicar primero cumple una función de validación: si el método no recupera l
 
 El análisis exploratorio mostró que tipos como `5R1`, `5R2` y `5R3` tienen ritmos muy parecidos y se distinguen sobre todo por su duración. También mostró que `1+1+3` tiene una distribución de duraciones inusualmente amplia y con varios picos.
 
-![Ritmo y tempo de las codas de 5 clics](figures/01_rhythm_tempo_5click.png)
+![Ritmo y tempo de las codas de 5 clics](reports/figures/01_rhythm_tempo_5click.png)
 
-![Distribución de duraciones de las codas 1+1+3](figures/01_113_duration.png)
+![Distribución de duraciones de las codas 1+1+3](reports/figures/01_113_duration.png)
 
 ### 6.2. Resultados del agrupamiento
 
@@ -121,7 +121,7 @@ En las codas de 5 clics se observaron tres tipos de discrepancia:
 2. **División sin diferencia de tempo:** `5R1` se divide en tres grupos con la misma duración media (≈ 0,33 s), que difieren en detalles finos del ritmo.
 3. **Fusión:** un grupo reúne `5R2`, casi todas las `5R3` (solo 19 en EC1) y algunas `5R1`.
 
-![División de 1+1+3 por el agrupamiento no supervisado](figures/02_113_split.png)
+![División de 1+1+3 por el agrupamiento no supervisado](reports/figures/02_113_split.png)
 
 ### 6.4. Comprobaciones
 
@@ -133,7 +133,7 @@ La estabilidad frente a la semilla aleatoria fue **moderada** (ARI 0,68–0,77 e
 
 Se planteó la pregunta de forma directa: un modelo de mezcla sobre la duración de las codas `1+1+3` únicamente. El resultado fue **k = 3 en las 5 semillas** y en 30 de 30 remuestreos *bootstrap*, con centros en **0,81, 1,05 y 1,28 s**. La ventaja en BIC frente a las alternativas fue clara: +109 puntos frente a 2 clases y +33 frente a 4.
 
-![Tres clases de tempo en 1+1+3](figures/02_113_tempo_classes.png)
+![Tres clases de tempo en 1+1+3](reports/figures/02_113_tempo_classes.png)
 
 **Conclusión de la fase 1:** el método recupera la estructura conocida y, sin supervisión, reproduce un resultado publicado y no evidente: la existencia de clases discretas de tempo. La fase también dejó una lección metodológica: un modelo amplio sirve para *detectar* estructura, pero *confirmarla* requiere una prueba específica.
 
@@ -178,7 +178,7 @@ Con el nuevo método, `1+1+3` sigue siendo robusto: es multimodal en el 100 % de
 
 Las duraciones del repertorio abarcan un orden de magnitud (de ≈ 0,15 a ≈ 1,6 s), y muchos tipos quedan entre las clases de `1+1+3`. No se observa una rejilla pequeña de tempos compartida por todo el repertorio. Con un solo tipo robustamente multimodal, tampoco hay datos suficientes para contrastarlo formalmente. Queda anotada, sin afirmarse, una observación: los tipos más lentos (`8R`, el modo lento de `7D1` y la clase lenta de `1+1+3`) se concentran en torno a 1,2–1,3 s.
 
-![Duración por tipo de coda](figures/03_tempo_ladder.png)
+![Duración por tipo de coda](reports/figures/03_tempo_ladder.png)
 
 ### 7.5. Una coincidencia sugerente: `7D1` y `1+1+3`
 
@@ -197,7 +197,7 @@ Al revisar los datos por día, se observó que en ciertas sesiones tanto `7D1` c
 
 Se contrastó en las 40 sesiones con datos suficientes, correlacionando el tempo medio de `1+1+3` con el del resto de tipos (tras estandarizar la duración dentro de cada tipo). El resultado fue **r = 0,15, p = 0,37**, y un test de permutación dio el mismo resultado. En el análisis tipo a tipo, dos comparaciones alcanzaron p < 0,05, pero con signos opuestos, y ninguna superó la corrección de Bonferroni para 8 comparaciones (umbral 0,0063). **La hipótesis no se sostiene**: el patrón inicial era anecdótico.
 
-![Covariación del tempo por sesión](figures/03_session_covariation.png)
+![Covariación del tempo por sesión](reports/figures/03_session_covariation.png)
 
 ## 8. Síntesis de la evidencia
 
